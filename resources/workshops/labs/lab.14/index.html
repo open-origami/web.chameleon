@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./web/assets/css/styles.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.zoom.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.lean.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.min.css">
+
+    <title>Origami Chameleon Labs</title>
+  </head>
+
+  <body>
+    <h1>Origami Chameleon Labs</h1>
+    <h2>Lab 14. Role Coordination </h2>
+    <p>
+      In the previous lab RFocus was applied on both views to get an autonomous
+      focus management. In this lab the RLock role is created to coordinate the
+      views in such manner that when a view gains the focus, the other loses 
+      it and vice versa. Click on the views to verify the effect.
+    </p>
+
+    <div class="container">
+      <div id="A" ref="#B" class="view" left>View A</div>
+      <div id="B" ref="#A" class="view" right>View B</div>
+    </div>
+
+    <script type="module" src="./web/code/build/start.js"></script>
+  </body>
+
+</html>

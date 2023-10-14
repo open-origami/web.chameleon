@@ -1,0 +1,7 @@
+.min-on {
+  --scale          : 0.5;
+  -transform-origin : 0 0;
+}
+
+.min-off {
+}

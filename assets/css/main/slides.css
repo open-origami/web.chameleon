@@ -1,0 +1,145 @@
+.slides .slide {
+  display        : flex;
+  flex-direction : row;
+  flex-wrap      : nowrap;
+  flex-shrink    : 0;
+  position       : relative;
+  top            : -50px;
+  width          : 100%;
+  height         : 100%;
+  margin-right   : 400px;
+}
+
+.slides .slide.show {
+  position   : relative;
+  left       : 0;
+  transition : all 2s;
+}
+
+.slides .slide.hide {
+  position   : relative;
+  left       : -10000px;
+  transition : all 2s;
+}
+
+.slides .slide.drop {
+  position : absolute;
+  left     : 10000px;
+}
+
+.slides .slide .figure {
+  width       : 50%;
+  height      : 100%;
+  position    : relative;
+  perspective : 1800px;
+}
+
+.slides .slide .figure img {
+  width           : 95%;
+  height          : auto;
+  position        : absolute;
+  top             : 0;
+  bottom          : 0;
+  left            : 0;
+  right           : 0;
+  margin          : auto;
+  padding-left    : 20px;
+  transform-style : preserve-3d;
+  transform       : rotateY(30deg);
+}
+
+.slides .slide .description {
+  width           : 50%;
+  height          : 100%;
+  padding         : 0 40px;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  color           : #FAFAFA;
+}
+
+.slides .slide .description .title {
+  font-size   : 32px;
+  line-height : 1.1;
+}
+
+.slides .slide .description .caption {
+  margin-top     : 20px;
+  font-size      : 20px;
+  font-weight    : 300;
+  letter-spacing : 1px;
+  line-height    : 1.5;
+}
+
+.slides .slide .description .caption p {
+  margin-bottom : 10px;
+}
+
+@media screen and (max-width: 830px) {
+
+  .slides .slide {
+    top : 0;
+  }
+
+  .slides .slide {
+    width  : 100%;
+    height : 100%;
+    flex-direction : column;
+    flex-wrap      : nowrap;
+    justify-content: center;
+  }
+
+  .slides .slide .figure {
+    width      : 100%;
+    height     : 50%;
+    text-align : center;
+  }
+
+  .slides .slide .figure img {
+    width  : 60%;
+    height : auto;
+  }
+
+  .slides .slide .description {
+    width : 100%;
+    height: 50%;
+  }
+
+  .slides .slide .description ul {
+    display : none;
+  }
+
+}
+
+@media screen and (max-width: 475px) {
+
+  .slides {
+    margin-top : 20px;
+  }
+
+  .slides .slide .figure img {
+    width  : 90%;
+    height : auto;
+  }
+
+  .slides .slide .description .title {
+    font-size   : 28px;
+  }
+
+  .slides .slide .description .caption {
+    font-size   : 18px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .slides .slide .figure {
+    height: 40%;
+  }
+
+  .slides .slide .description {
+    height: 60%;
+  }
+
+}

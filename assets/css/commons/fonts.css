@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "Consolas";
+  src: url("../../fonts/consolas.eot");
+  src: url("../../fonts/consolas.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/consolas.otf") format("opentype"),
+    url("../../fonts/consolas.svg") format("svg"),
+    url("../../fonts/consolas.ttf") format("truetype"),
+    url("../../fonts/consolas.woff") format("woff"),
+    url("../../fonts/consolas.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../../fonts/helvetica-neue.eot");
+  src: url("../../fonts/helvetica-neue.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/helvetica-neue.otf") format("opentype"),
+    url("../../fonts/helvetica-neue.svg") format("svg"),
+    url("../../fonts/helvetica-neue.ttf") format("truetype"),
+    url("../../fonts/helvetica-neue.woff") format("woff"),
+    url("../../fonts/helvetica-neue.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../../fonts/helvetica-neue-ultralight.eot");
+  src: url("../../fonts/helvetica-neue-ultralight.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/helvetica-neue-ultralight.otf") format("opentype"),
+    url("../../fonts/helvetica-neue-ultralight.svg") format("svg"),
+    url("../../fonts/helvetica-neue-ultralight.ttf") format("truetype"),
+    url("../../fonts/helvetica-neue-ultralight.woff") format("woff"),
+    url("../../fonts/helvetica-neue-ultralight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}

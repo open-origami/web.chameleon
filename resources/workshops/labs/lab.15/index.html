@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./web/assets/css/styles.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.show.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.zoom.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.lean.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/subject.min.css">
+
+    <title>Origami Chameleon Labs</title>
+  </head>
+
+  <body>
+    <h1>Origami Chameleon Labs</h1>
+    <h2>Lab 15. Role Synchronization </h2>
+    <p>
+      In this last Lab we add content to the views. View A will play a video
+      whilst view B present snapshots from it timedly. To sync the contents
+      several roles have been created. Use the Play & Stop buttons to control
+      the video play and let check the results.
+    </p>
+
+    <div class="container">
+      <div id="A" ref="#B" class="view" left>
+        <div class="timeline">
+          0:01  0:10  0:17  0:28  0:37  0:46  0:54  1:04  2:02  2:11
+          2:20  2:28  2:35  2:43  2:51  2:59  3:06  3:15  3:24  3:35
+          4:00  4:10  4:19  4:27  4:37  4:47  4:59  5:25  5:34  5:43
+          5:51  6:14  6:22  6:43  6:50  7:16  7:23  7:32  7:43  7:52
+          8:00  8:10  8:20  8:28  8:46  8:56  9:35  9:45  9:52 10:07
+         10:18 10:30 10:55 11:07 11:14 11:25 11:32 11:39 11:48 11:58
+         12:03 12:10 12:25 12:36 12:46 12:57 13:12 13:18 13:53 13:59
+         14:15 14:24 14:36 14:43 14:53 15:02 15:18 15:38 15:44 15:54
+         16:03 16:11 16:34 16:42 16:52 16:59 17:05 17:12 17:18 18:09
+         18:17 18:55 19:18 19:33
+        </div>
+        <video>
+          <source src="./web/assets/video/video.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div id="B" ref="#A" class="view" right>
+        <img class="image fouc" src="./web/assets/img/image.01.png">
+        <img class="image fouc" src="./web/assets/img/image.02.png">
+        <img class="image fouc" src="./web/assets/img/image.03.png">
+        <img class="image fouc" src="./web/assets/img/image.04.png">
+        <img class="image fouc" src="./web/assets/img/image.05.png">
+        <img class="image fouc" src="./web/assets/img/image.06.png">
+        <img class="image fouc" src="./web/assets/img/image.07.png">
+        <img class="image fouc" src="./web/assets/img/image.08.png">
+        <img class="image fouc" src="./web/assets/img/image.09.png">
+
+        <img class="image fouc" src="./web/assets/img/image.10.png">
+        <img class="image fouc" src="./web/assets/img/image.11.png">
+        <img class="image fouc" src="./web/assets/img/image.12.png">
+        <img class="image fouc" src="./web/assets/img/image.13.png">
+        <img class="image fouc" src="./web/assets/img/image.14.png">
+        <img class="image fouc" src="./web/assets/img/image.15.png">
+        <img class="image fouc" src="./web/assets/img/image.16.png">
+        <img class="image fouc" src="./web/assets/img/image.17.png">
+        <img class="image fouc" src="./web/assets/img/image.18.png">
+        <img class="image fouc" src="./web/assets/img/image.19.png">
+
+        <img class="image fouc" src="./web/assets/img/image.20.png">
+        <img class="image fouc" src="./web/assets/img/image.21.png">
+        <img class="image fouc" src="./web/assets/img/image.22.png">
+        <img class="image fouc" src="./web/assets/img/image.23.png">
+        <img class="image fouc" src="./web/assets/img/image.24.png">
+        <img class="image fouc" src="./web/assets/img/image.25.png">
+        <img class="image fouc" src="./web/assets/img/image.26.png">
+        <img class="image fouc" src="./web/assets/img/image.27.png">
+        <img class="image fouc" src="./web/assets/img/image.28.png">
+        <img class="image fouc" src="./web/assets/img/image.29.png">
+
+        <img class="image fouc" src="./web/assets/img/image.30.png">
+        <img class="image fouc" src="./web/assets/img/image.31.png">
+        <img class="image fouc" src="./web/assets/img/image.32.png">
+        <img class="image fouc" src="./web/assets/img/image.33.png">
+        <img class="image fouc" src="./web/assets/img/image.34.png">
+        <img class="image fouc" src="./web/assets/img/image.35.png">
+        <img class="image fouc" src="./web/assets/img/image.36.png">
+        <img class="image fouc" src="./web/assets/img/image.37.png">
+        <img class="image fouc" src="./web/assets/img/image.38.png">
+        <img class="image fouc" src="./web/assets/img/image.39.png">
+
+        <img class="image fouc" src="./web/assets/img/image.40.png">
+        <img class="image fouc" src="./web/assets/img/image.41.png">
+        <img class="image fouc" src="./web/assets/img/image.42.png">
+        <img class="image fouc" src="./web/assets/img/image.43.png">
+        <img class="image fouc" src="./web/assets/img/image.44.png">
+        <img class="image fouc" src="./web/assets/img/image.45.png">
+        <img class="image fouc" src="./web/assets/img/image.46.png">
+        <img class="image fouc" src="./web/assets/img/image.47.png">
+        <img class="image fouc" src="./web/assets/img/image.48.png">
+        <img class="image fouc" src="./web/assets/img/image.49.png">
+
+        <img class="image fouc" src="./web/assets/img/image.50.png">
+        <img class="image fouc" src="./web/assets/img/image.51.png">
+        <img class="image fouc" src="./web/assets/img/image.52.png">
+        <img class="image fouc" src="./web/assets/img/image.53.png">
+        <img class="image fouc" src="./web/assets/img/image.54.png">
+        <img class="image fouc" src="./web/assets/img/image.55.png">
+        <img class="image fouc" src="./web/assets/img/image.56.png">
+        <img class="image fouc" src="./web/assets/img/image.57.png">
+        <img class="image fouc" src="./web/assets/img/image.59.png">
+        <img class="image fouc" src="./web/assets/img/image.59.png">
+
+        <img class="image fouc" src="./web/assets/img/image.60.png">
+        <img class="image fouc" src="./web/assets/img/image.61.png">
+        <img class="image fouc" src="./web/assets/img/image.62.png">
+        <img class="image fouc" src="./web/assets/img/image.63.png">
+        <img class="image fouc" src="./web/assets/img/image.64.png">
+        <img class="image fouc" src="./web/assets/img/image.65.png">
+        <img class="image fouc" src="./web/assets/img/image.66.png">
+        <img class="image fouc" src="./web/assets/img/image.67.png">
+        <img class="image fouc" src="./web/assets/img/image.68.png">
+        <img class="image fouc" src="./web/assets/img/image.69.png">
+
+        <img class="image fouc" src="./web/assets/img/image.70.png">
+        <img class="image fouc" src="./web/assets/img/image.71.png">
+        <img class="image fouc" src="./web/assets/img/image.72.png">
+        <img class="image fouc" src="./web/assets/img/image.73.png">
+        <img class="image fouc" src="./web/assets/img/image.74.png">
+        <img class="image fouc" src="./web/assets/img/image.75.png">
+        <img class="image fouc" src="./web/assets/img/image.76.png">
+        <img class="image fouc" src="./web/assets/img/image.77.png">
+        <img class="image fouc" src="./web/assets/img/image.78.png">
+        <img class="image fouc" src="./web/assets/img/image.79.png">
+
+        <img class="image fouc" src="./web/assets/img/image.80.png">
+        <img class="image fouc" src="./web/assets/img/image.81.png">
+        <img class="image fouc" src="./web/assets/img/image.82.png">
+        <img class="image fouc" src="./web/assets/img/image.83.png">
+        <img class="image fouc" src="./web/assets/img/image.84.png">
+        <img class="image fouc" src="./web/assets/img/image.85.png">
+        <img class="image fouc" src="./web/assets/img/image.86.png">
+        <img class="image fouc" src="./web/assets/img/image.87.png">
+        <img class="image fouc" src="./web/assets/img/image.88.png">
+        <img class="image fouc" src="./web/assets/img/image.89.png">
+
+        <img class="image fouc" src="./web/assets/img/image.90.png">
+        <img class="image fouc" src="./web/assets/img/image.91.png">
+        <img class="image fouc" src="./web/assets/img/image.92.png">
+        <img class="image fouc" src="./web/assets/img/image.93.png">
+        <img class="image fouc" src="./web/assets/img/image.94.png">
+      </div>
+    </div>
+
+    <div class="container buttons">
+      <button id="play" class="button">Play</button>
+      <button id="stop" class="button active">Stop</button>
+    </div>
+
+    <script type="module" src="./web/code/build/start.js"></script>
+  </body>
+
+</html>

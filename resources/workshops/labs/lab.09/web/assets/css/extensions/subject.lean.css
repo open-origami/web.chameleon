@@ -1,0 +1,9 @@
+.lean-on {
+  --perspective : 2000px;
+  --x           : -200px;
+  --rot-y       : 50deg;
+  --scale       : 1;
+}
+
+.lean-off {
+}

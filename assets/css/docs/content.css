@@ -1,0 +1,276 @@
+.content {
+  margin-left : 20px;
+  color       : #37474F;
+  font-size   : 18px;
+}
+
+.content h1 {
+  color       : #8BC34A;
+  font-size   : 36px;
+  font-weight : 800;
+  line-height : 1.5;
+}
+
+.content h2 {
+  margin      : 20px auto;
+  color       : #8BC34A;
+  font-size   : 24px;
+  font-weight : 800;
+  line-height : 1.5;
+}
+
+.content h3 {
+  margin      : 20px auto;
+  color       : #8BC34A;
+  font-size   : 20px;
+  font-weight : 400;
+  line-height : 1.5;
+}
+
+.content a {
+  margin  : 0;
+  padding : 0;
+}
+
+.content p.lead {
+  margin      : 0;
+  font-size   : 24px;
+  font-weight : 300;
+  line-height : 1.5;
+  text-align  : left;
+}
+
+.content p {
+  margin      : 20px 0;
+  font-size   : 18px;
+  font-weight : 400;
+  line-height : 1.6;
+  text-align  : justify;
+}
+
+.content strong {
+  color       : #8BC34A;
+  font-weight : 800;
+}
+
+.content em {
+  color : #8BC34A;
+}
+
+.content p > code {
+  font-family : monospace;
+}
+
+.content ol, ul {
+  margin      : 20px 0 20px 20px;
+  font-size   : 18px;
+  line-height : 1.6;
+  text-align  : justify;
+}
+
+.content ul li::before {
+  content : ' ';
+  color   : #558B2F;
+}
+
+.content .code {
+  margin        : 0 auto;
+  padding       : 20px;
+  width         : 90%;
+  border        : 1px solid #CCC;
+  border-left   : 3px solid #8BC34A;
+  border-radius : 4px;
+  text-align    : justify;
+  overflow-x    : scroll;
+  color         : #000;
+  font-family   : Consolas;
+  font-weight   : 800;
+  line-height   : 1.5;
+}
+
+.content figure {
+  display    : block;
+  margin     : 0px auto;
+  text-align : center;
+}
+
+.content figure img {
+  max-width: 80%;
+  height : auto;
+}
+
+.content figcaption {
+  display     : block;
+  width       : 90%;
+  margin      : 30px  auto;
+  font-size   : 16px;
+  line-height : 1.6;
+  text-align  : center;
+}
+
+.content table {
+  width       : 90%;
+  margin      : 30px auto;
+  font-size   : 18px;
+  line-height : 2.3;
+  text-align  : left;
+}
+
+.content table thead {
+  font-size   : 18px;
+  font-weight : 800;
+  text-align  : left;
+}
+
+.content table th {
+  padding       : 5px 15px;
+  border-top    : 1px solid #8BC34A;
+  border-bottom : 1px solid #8BC34A;
+  color         : #8BC34A;
+  font-weight   : 800;
+  background    : #F1F8E9;
+}
+
+.content table tr.inherited {
+  color : #AAA;
+}
+
+.content table td {
+  padding       : 5px 15px;
+  border-bottom : 1px solid #E0E0E0;
+}
+
+.content table td .indent {
+  margin-left : 15px;
+}
+
+.content table.bands td {
+  border-bottom : none;
+}
+
+.content table.bands tr:nth-child(2n+1) {
+  background : #F1F8E9;
+}
+
+.content table caption {
+  margin-bottom : 20px;
+  font-size     : 16px;
+  line-height   : 1.6;
+  text-align    : center;
+}
+
+.content .box {
+  margin        : 40px auto;
+  padding       : 0;
+  width         : 90%;
+  border        : 1px solid #CCC;
+  border-left   : 3px solid #8BC34A;
+  border-radius : 4px;
+  text-align    : justify;
+}
+
+.content .box .title {
+  margin      : 20px 40px;
+  color       : #8BC34A;
+  font-size   : 20px;
+  font-weight : 800;
+}
+
+.content .box .caption {
+  margin      : 20px 40px;
+  font-size   : 18px;
+  font-weight : 400;
+  line-height : 1.6;
+}
+
+.content .action {
+  width   : 100%;
+  height  : 100px;
+  padding : 20px;
+}
+
+.content .action .button {
+  display       : table;
+  margin        : 0 auto;
+  padding       : 15px;
+  color         : #FFF;
+  background    : #8BC34A;
+  font-size     : 18px;
+  border-radius : 4px;
+}
+
+.content .see-also {
+  padding : 50px 0;
+  height  : 200px;
+}
+
+.content .see-also .controls .control {
+  height        : 45px;
+  width         : 100px;
+  padding       : 15px;
+  color         : #FFF;
+  background    : #8BC34A;
+  font-size     : 18px;
+  border-radius : 4px;
+  line-height   : 1;
+  text-align    : center;
+}
+
+.content .see-also  .controls .previous { float : left;  }
+.content .see-also  .controls .next     { float : right; }
+
+.content .see-also  .previous::after { content: 'Previous'; }
+.content .see-also  .next::after     { content: 'Next';     }
+
+.content .read-more {
+  padding-top    : -30px;
+  padding-bottom : 50px;
+  height         : 60px;
+
+}
+
+.content .read-more .controls .control {
+  height        : 45px;
+  width         : 100px;
+  padding       : 15px;
+  color         : #8BC34A;
+  background    : #FFF;
+  font-size     : 18px;
+  border        : 1px solid #8BC34A;
+  border-radius : 4px;
+  line-height   : 1;
+  text-align    : center;
+}
+
+.content .read-more .controls .read        { float   : right;  }
+.content .read-more .controls .read::after { content : 'Read'; }
+
+
+@media screen and (max-width: 1200px) {
+
+  .content {
+    margin-right : 40px;
+  }
+
+  .content .code {
+    font-size : 16px;
+  }
+
+}
+
+@media screen and (max-width: 690px) {
+
+  .content {
+    width         : 90%;
+    padding-right : 40px;
+  }
+
+}
+
+@media screen and (max-width: 430px) {
+
+  .content p {
+    text-align : left;
+  }
+
+}

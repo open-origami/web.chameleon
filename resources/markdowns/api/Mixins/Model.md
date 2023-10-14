@@ -1,0 +1,93 @@
+# Chameleon API. Mixin Model
+
+<p class="lead">Model. Mixin</p>
+
+### Type
+
+Model
+
+### Description
+
+The `Mixin` model provides to Chameleon the installing & uninstalling logic to create Mixin driven extensions. The framework use this model to interpret Mixin specifications and to apply the proper deployment logic. For more details about how works the Mixin Extension Model see the documentation.
+
+### Metadata
+
+Each `Mixin` extension enrich the metadata space of the component where the extension is installed. That space contains all relevant information required to undertake the installing and uninstalling processes and to manage the extension behaviour during its lifetime. The following table summarize all the metadata. Mixin specific fields are shown in dark.
+
+<table>
+  <tr class="inherited">
+    <th>Key</th>
+    <th>Description</th>
+    <th>Value / Type</th>
+  </tr>
+  <tr class="inherited">
+    <td>Core.Extensions.Installed</td>
+    <td>The extension`s metadata</td>
+    <td>[MExt, ...]</td>
+  </tr>
+  <tr class="inherited">
+    <td>MExt.class</td>
+    <td>The extension class</td>
+    <td>class Ext {}</td>
+  </tr>
+  <tr class="inherited">
+    <td>MExt.ext</td>
+    <td>The extension context</td>
+    <td> {} instanceof Ext</td>
+  </tr>
+  <tr class="inherited">
+    <td>MExt.isOn</td>
+    <td>Active status Checker </td>
+    <td>Function</td>
+  </tr>
+  <tr class="inherited">
+    <td>MExt.on</td>
+    <td>Switch On Command</td>
+    <td>Function</td>
+  </tr>
+  <tr class="inherited">
+    <td>MExt.off</td>
+    <td>Switch Off Command</td>
+    <td>Function</td>
+  </tr>
+  <tr>
+    <td>MExt.mixin.locus</td>
+    <td>Where execution is bound</td>
+    <td>Object</td>
+  </tr>
+  <tr>
+    <td>MExt.mixin.in</td>
+    <td>The incoming features</td>
+    <td>Object</td>
+  </tr>
+  <tr>
+    <td>MExt.mixin.out</td>
+    <td>The outgoing features</td>
+    <td>Object</td>
+  </tr>
+</table>
+
+### Examples
+
+The following example shows a typical use of the model to define an Mixin driven specification. As it can be seen, the `@Extension` decorator receives the `Mixin` model as a parameter. The contents of the class corresponds to a typical Mixin driven specification.  
+
+```Javascript
+import { Extension } from 'origami.chameleon.js'
+import { Mixin     } from 'origami.chameleon.mixins.js'
+import { Before    } from 'origami.chameleon.mixins.js'
+import { After     } from 'origami.chameleon.mixins.js'
+import { Override  } from 'origami.chameleon.mixins.js'
+import { Discard   } from 'origami.chameleon.mixins.js'
+
+@Extension (Mixin)
+class Ext {
+  constructor () {
+    ...
+  }
+
+  @Before   fx (x) { ... }
+  @After    fy (x) { ... }
+  @Override fz (x) { ... }
+  @Discard  fw (x) { ... }
+}
+```

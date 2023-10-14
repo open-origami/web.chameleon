@@ -1,0 +1,242 @@
+.step {
+  display : flex;
+}
+
+.step .instructions {
+  width         : 40%;
+  padding       : 0 30px;
+  border-right  : 1px solid #CCC;
+  transition    : 2s ease all;
+}
+
+.step .instructions .number {
+  display       : inline;
+  float         : right;
+  width         : 55px;
+  height        : 55px;
+  position      : relative;
+  left          : 60px;
+  border        : 1px solid #CCC;
+  border-radius : 100%;
+  color         : #37474F;
+  background    : #FFF;
+  font-size     : 20px;
+  font-weight   : 400;
+  line-height   : 2.6;
+  text-align    : center;
+  vertical-align: middle;
+  transition    : 2s ease all;
+
+}
+
+.step.active .instructions .number {
+  color        : #FFF;
+  background   : #8BC34A;
+  font-weight  : 400;
+  border       : double;
+}
+
+.step.done .instructions .number {
+  background : #dcedc8;
+}
+
+.step .instructions .title {
+  margin      : 0px 20px;
+  color       : #37474F;
+  font-size   : 26px;
+  font-weight : 300;
+  line-height : 1.5;
+  text-align  : right;
+}
+
+.step.active .instructions .title {
+  font-weight : 400;
+}
+
+.step .instructions .description {
+  margin      : 20px;
+  padding     : 0;
+  color       : #37474F;
+  font-size   : 16px;
+  font-weight : 400;
+  line-height : 1.6;
+  text-align  : right;
+}
+
+.step .workspace {
+  position      : relative;
+  width         : 60%;
+  min-width     : 600px;
+  height        : 520px;
+  margin        : 10px 0 70px 40px;
+  border-radius : 10px;
+  background    : #FAFAFA;
+  transition    : 2s ease all;
+}
+
+.step.head .workspace {
+  height : 180px;
+}
+
+.step.active .workspace {
+  background : #FAFAFA;
+}
+
+.step .workspace .title {
+  margin      : 20px 20px 0 0;
+  color       : #37474F;
+  font-size   : 16px;
+  font-weight : 800;
+  line-height : 1.6;
+  text-align  : right;
+}
+
+.step .workspace .caption {
+  margin      : 0 20px;
+  color       : #37474F;
+  font-size   : 14px;
+  font-weight : 400;
+  line-height : 1.6;
+  text-align  : right;
+}
+
+.step .workspace .editor {
+  margin        : 20px auto 0 auto;
+  padding       : 10px;
+  width         : 90%;
+  height        : 350px;
+  max-width     : 590px;
+  border        : 1px solid #CCC;
+  border-left   : 3px solid #CCC;
+  border-radius : 4px;
+  background    : #FFF;
+  font-size     : 14px;
+  font-family   : Consolas;
+  font-weight   : 400;
+  line-height   : 1.5;
+  overflow      : scroll;
+}
+
+.step .workspace .editor .code.solved { animation: text 1s; }
+
+@keyframes text {
+  0%   { color : #37474F; }
+  40%  { color : #CCC; }
+  100% { color : #37474F; }
+}
+
+.step .workspace .editor:focus {
+  border-left : 3px solid #8BC34A;
+  outline     : none;
+}
+
+.step .workspace .editor .clipboard {
+  margin: -3000px
+}
+
+.step .workspace .solution {
+  display : none;
+}
+
+.step .workspace .action {
+  position      : absolute;
+  bottom        : 20px;
+  left          : 40px;
+  padding       : 12px 16px;
+  color         : #37474F;
+  background    : #FFF;
+  font-size     : 14px;
+  border        : solid 1px #CCC;
+  border-radius : 4px;
+}
+
+.step.head .workspace .action {
+  position   : relative;
+  margin-top : 60px;
+  width      : 140px;
+}
+
+.step .workspace .action i {
+  margin-right : 15px;
+  font-size    : 22px;
+}
+
+.step .workspace .action:focus {
+  outline : none;
+}
+
+.step .workspace .controls {
+  position   : absolute;
+  bottom     : 0;
+  right      : 20px;
+  padding    : 0;
+  visibility : hidden;
+}
+
+.step .workspace .controls:first {
+  visibility : visible;
+}
+
+.step.active .workspace .controls {
+  visibility : visible;
+}
+
+.step .workspace .previous,
+.step .workspace .next {
+  margin        : -10px 10px 20px 0;
+  padding       : 15px;
+  color         : #37474F;
+  background    : #FFF;
+  font-size     : 16px;
+  border        : solid 1px #CCC;
+  border-radius : 100%;
+}
+
+.step:first-of-type .workspace .previous { display: none; }
+.step:last-of-type  .workspace .next     { display: none; }
+
+.step .workspace .previous:focus,
+.step .workspace .next:focus {
+  outline : none;
+}
+
+@media screen and (max-width: 1185px) {
+
+  .step {
+    display : block;
+  }
+
+  .step .instructions .number {
+    left : -58px;
+  }
+
+  .step .instructions {
+    width       : 90%;
+    margin-left : 100px;
+    border      : none;
+    border-left : 1px solid #CCC;
+  }
+
+  .step .instructions .number      {  float      : left }
+  .step .instructions .title       {  text-align : left }
+  .step .instructions .description {  text-align : left; max-width : 500px; }
+
+  .step .workspace {
+    margin : 30px auto;
+    width  : 90%;
+  }
+
+  .step .workspace .editor {
+    width     : 100%;
+    max-width : 90%
+  }
+
+}
+
+@media screen and (max-width: 720px) {
+
+  .step .instructions {
+    margin-left : 60px;
+  }
+
+}

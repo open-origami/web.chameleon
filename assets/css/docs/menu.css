@@ -1,0 +1,44 @@
+.menu {
+  margin       : 0 40px;
+  border-right : 1px solid #E0E0E0;
+}
+
+.menu h3 {
+  margin : 20px 10px 0 0;
+  color       : #37474F;
+  font-size   : 18px;
+  font-weight : 500;
+  line-height : 1.5;
+}
+
+.menu ul {
+  margin : 20px 10px 20px 0;
+}
+
+.menu ul::before {
+  content: none;
+}
+
+.menu li {
+  padding     : 10px 10px;
+  color       : #37474F;
+  font-size   : 14px;
+  font-weight : 400;
+  line-height : 1.2;
+  overflow    : hidden;
+  white-space : nowrap;
+}
+
+.menu .active {
+  background    : #F1F8E9;
+  border-radius : 30px;
+}
+
+.menu a {
+  color : #37474F;
+}
+
+.menu a:hover {
+  color      : #8BC34A;
+  transition : color 1s;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154959334-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-154959334-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="../../assets/images/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="../../assets/images/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="../../assets/images/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../../assets/images/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="../../assets/images/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="../../assets/images/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="../../assets/images/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="../../assets/images/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/images/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="../../assets/images/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="../../assets/images/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/images/icons/favicon-16x16.png">
+  <link rel="manifest" href="../../assets/images/icons/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="../../assets/images/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="../../assets/css/commons/reset.css">
+  <link rel="stylesheet" href="../../assets/css/commons/fonts.css">
+  <link rel="stylesheet" href="../../assets/css/commons/base.css">
+  <link rel="stylesheet" href="../../assets/css/commons/icons.css">
+  <link rel="stylesheet" href="../../assets/css/commons/footer.css">
+  <link rel="stylesheet" href="../../assets/css/labs/navigation.css">
+  <link rel="stylesheet" href="../../assets/css/labs/header.css">
+  <link rel="stylesheet" href="../../assets/css/labs/toc.css">
+
+
+  <title>Origami Chameleon - Labs</title>
+</head>
+<body>
+
+  <nav class="navigation">
+    <div class="brand">
+      <a href="../../../origami/index.html" target="_blank">
+        <div class="name">Open Origami</div>
+        <div class="tagline">Shape your Imagination</div>
+        <img class="origami" src="../../assets/images/logos/logo.00.png" alt="Origami logo">
+      </a>
+    </div>
+    <a href="../../index.html">
+      <img class="logo" src="../../assets/images/logos/logo.01.png" alt="Origami Chameleon">
+    </a>
+    <div class="links">
+      <a class="link" href="../../index.html">Origami Chameleon</a>
+      <a class="link" href="../../pages/docs/doc.html#Start:Download">Download</a>
+      <a class="link" href="../../pages/docs/doc.html#Start:Overview">Docs</a>
+      <a class="link" href="../../pages/docs/api.html">Reference</a>
+      <a class="link active" href="#">Labs</a>
+    </div>
+  </nav>
+
+  <header class="header">
+    <div class="container">
+      <div class="product">
+        <a href="../../index.html">
+          <div class="name">Chameleon</div>
+          <div class="family">Open Origami</div>
+        </a>
+      </div>
+      <div class="section-title">Labs</div>
+    </div>
+  </header>
+
+  <template id="template">
+    <div class="lab">
+      <div class="head">
+        <h1 class="title"></h1>
+        <h2 class="subtitle"></h2>
+      </div>
+      <div class="group">
+        <div class="box">
+          <div class="label">Tasks</div>
+          <div class="value steps"></div>
+        </div>
+        <div class="box">
+          <div class="label">Time</div>
+          <div class="value time"></div>
+        </div>
+        <div class="box">
+          <div class="label">Level</div>
+          <div class="value level"></div>
+        </div>
+      </div>
+      <p class="description"></p>
+      <div class="controls">
+        <a href="" class="start">Start Lab</a>
+      </div>
+    </div>
+  </template>
+
+  <div class="container">
+    <div class="toc">
+      <h1 class="title">Chamaleon Labs</h1>
+      <p class="lead">
+        This section provides a collection of challenges to get mastery in Chameleon use.
+        Each lab is a guided experience aiming to a defined goal. You can review
+        provided solutions and copy the code to your editor to play with them.
+      </p>
+      <div class="catalog"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="contents">
+      <div class="container">
+        <div class="section">
+          <h3 class="title">About Open Origami</h3>
+          <div class="description">
+            <p class="text">
+               Origami is an open source initiative focused on providing solutions
+               to fill the gaps detected on component based technologies and
+               create seamless experiences for frontend developers.
+             </p>
+             <div class="logo">
+               <a href="../../../origami/index.html"
+                  target="_blank">
+                 <img src="../../assets/images/logos/logo.00.png" alt="Open Origami logo">
+               </a>
+             </div>
+          </div>
+        </div>
+        <div class="section">
+          <h3 class="title">Related Projects</h3>
+          <ul class="items">
+            <li>
+              <span class="fas fa-layer-group"></span>
+              <a href="../../../origami/index.html"
+                 target="_blank">Origami Whale</a>
+            </li>
+            <li>
+              <span class="fas fa-layer-group"></span>
+              <a href="../../../origami/index.html"
+                 target="_blank">Origami Frog</a>
+            </li>
+            <li>
+              <span class="fas fa-layer-group"></span>
+              <a href="../../../origami/index.html"
+                 target="_blank">Origami Kangaroo</a>
+            </li>
+            <li>
+              <span class="fas fa-layer-group"></span>
+              <a href="../../../origami/index.html"
+                 target="_blank">Origami hummingbird</a>
+            </li>
+            <li>
+              <span class="fas fa-layer-group"></span>
+              <a href="../../../origami/index.html"
+                 target="_blank">Origami Beaver</a>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3 class="title">Contact Us</h3>
+          <ul class="items">
+            <li class="item">
+              <span class="fas fa-bullhorn"></span>
+              <a href="https://twitter.com/" target="_blank">By Twitter</a>
+            </li>
+            <li class="item">
+              <span class="fas fa-home"></span>
+              <a href="../../../origami/index.html" target="_blank">By The Web</a>
+            </li>
+            <li class="item">
+              <span class="fas fa-envelope"></span>
+              <a href="mailto:info@open-origami.com" target="_blank">By Mail</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="rights">
+      <div class="container">
+        <span class="year"></span>. Open Origami is an Open Source initiative under Apache 2.0 License.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/commons/mdown.js"></script>
+  <script src="../../assets/js/commons/year.js"></script>
+  <script src="../../assets/js/labs/loader.toc.js"></script>
+  <script>
+
+    Loader ({
+      base      : '../../resources/markdowns/labs',
+      error     : '../../pages/error/light.html',
+      container : '.catalog',
+      template  : '#template',
+      default   : 'toc.md'
+    }).load ()
+
+    Year ({
+      container : 'body',
+      ref       : '.year'
+    })
+  </script>
+
+</body>
+</html>

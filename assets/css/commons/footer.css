@@ -1,0 +1,117 @@
+.footer {
+  width      : 100%;
+  margin     : 0;
+  padding    : 0;
+}
+
+.footer .rights {
+  color       : #606C76;
+  background  : #000;
+  font-size   : 18px;
+  font-weight : 400;
+  line-height : 1.5;
+}
+
+.footer .rights .container {
+  margin    : 0 auto;
+  padding   : 30px 40px;
+  max-width : 1140px;
+}
+
+.footer .contents {
+  background : #263238;
+}
+
+.footer .contents .container {
+  margin     : 0 auto;
+  max-width  : 1140;
+  min-height : 350px;
+  padding    : 30px 40px;
+  display    : grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 50px;
+}
+
+.footer .contents .section .title {
+  margin         : 10px 0;
+  color          : #FFF;
+  font-size      : 20px;
+  font-weight    : 400;
+  text-transform : uppercase;
+  line-height    : 1.5;
+}
+
+.footer .contents .section .description {
+  max-width: 70%;
+}
+
+.footer .contents .section .description .text {
+  color       : #CCC;
+  text-align  : left;
+  font-size   : 14px;
+  font-weight : 400;
+  line-height : 1.5;
+}
+
+.footer .contents .section .description .logo {
+  width   : 160px;
+  height  : 160px;
+  margin  : 0 auto;
+  padding : 10px;
+}
+
+.footer .contents .section .description .logo img {
+  width : 160px;
+}
+
+.footer .contents .section .items {
+  color       : #CCC;
+  text-align  : left;
+  font-size   : 14px;
+  font-weight : 400;
+  line-height : 2;
+}
+
+.footer li::before {
+  content : none;
+}
+
+@media screen and (max-width: 1020px) {
+
+  .footer .contents .section .description {
+    max-width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 740px) {
+
+  .footer .contents .container {
+    grid-template-rows    : auto auto;
+    grid-template-columns : auto auto;
+    margin                : 0 10%;
+  }
+  .footer .contents .section:first-child {
+    grid-column-start : 1;
+    grid-column-end   : 3;
+  }
+
+}
+
+@media screen and (max-width: 530px) {
+
+  .footer .contents .section:first-child {
+    grid-column-start : 1;
+    grid-column-end   : 1;
+  }
+
+  .footer .contents .container {
+    grid-template-rows    : auto auto auto;
+    grid-template-columns : auto;
+  }
+
+  .footer .contents .section .text {
+    padding-right : 0px;
+  }
+
+}

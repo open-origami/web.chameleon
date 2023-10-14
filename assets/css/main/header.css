@@ -1,0 +1,124 @@
+.header {
+  width         : 100%;
+  height        : 670px;
+  background    : #37474F;
+  border-bottom : 5px solid #8BC34A;
+}
+
+.header .container {
+  margin  : 0 auto;
+  padding : 0;
+}
+
+.header .logo {
+  position   : absolute;
+  top        : 560px;
+  right      : -30px;
+  transform  : scale(0.7);
+  z-index    : 100;
+  transition : filter 5s;
+}
+
+.header .logo:hover {
+  filter     : hue-rotate(180deg);
+  transition : filter 5s;
+}
+
+.header .product {
+  width   : 100%;
+  height  : 100%;
+  padding : 20px 30px;
+}
+
+.header .product .name {
+  color       : #8BC34A;
+  font-size   : 84px;
+  font-weight : 500;
+}
+
+.header .product .family {
+  color       : #CCC;
+  font-size   : 42px;
+  font-weight : 300;
+}
+
+.header .product .family::before {
+  margin-left  : 5px;
+  margin-right : 10px;
+  font-size    : 24px;
+  content      : 'by';
+}
+
+.header .slides {
+  width  : 100%;
+  height : 500px;
+}
+
+@media screen and (max-width: 1300px) {
+
+  .header .logo {
+    right     : -120px;
+    transform : scale(0.45);
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+
+  .header .logo {
+    top       : 100px;
+    right     : -150px;
+    transform : scale(0.3);
+  }
+
+  .header .product .name {
+    font-size : 60px;
+  }
+
+  .header .product .family {
+    font-size : 36px;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+  .header .logo {
+    top       : 140px;
+    right     : -180px;
+    transform : scale(0.25);
+  }
+}
+
+@media screen and (max-width: 475px) {
+
+  .header .logo {
+    top       : 50px;
+    right     : -270px;
+    transform : rotateZ(-90deg) scale(0.20);
+  }
+
+  .header .product .name {
+    font-size : 50px;
+  }
+
+  .header .product .family {
+    font-size : 30px;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .header {
+    height : 700px;
+  }
+
+  .header .product .name {
+    font-size : 40px;
+  }
+
+  .header .product .family {
+    font-size : 24px;
+  }
+
+}

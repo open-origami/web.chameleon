@@ -1,0 +1,7 @@
+.zoom-on {
+  --scale          : 2;
+  transform-origin : center;
+}
+
+.zoom-off {
+}

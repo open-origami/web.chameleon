@@ -1,0 +1,71 @@
+.action {
+  margin  : 0 auto;
+  padding : 40px 0;
+}
+
+.action .link {
+  display         : flex;
+  margin          : 0 auto;
+  width           : 380px;
+  justify-content : center;
+  text-decoration : none;
+}
+
+.action .link:hover {
+  box-shadow : 0 0 0 0;
+  transition: all 2s;
+}
+
+.action .link .icon {
+  width         : 80px;
+  height        : 90px;
+  color         : #FFF;
+  background    : #9CCC65;
+  border-radius : 8px 0 0 8px;
+  font-size     : 28px;
+  font-weight   : 400;
+  text-align    : center;
+  line-height   : 90px;
+}
+
+.action .link .group {
+  float         : left;
+  width         : 300px;
+  height        : 90px;
+  background    : #8BC34A;
+  border-radius : 0 8px 8px 0;
+}
+
+.action .link .group .title {
+  padding       : 10px 0 5px 0;
+  color         : #FFF;
+  font-size     : 24px;
+  font-weight   : 400;
+  text-align    : center;
+}
+
+.action .link .group .caption {
+  padding       : 0;
+  color         : #FFF;
+  font-size     : 16px;
+  font-weight   : 300;
+  text-align    : center;
+  line-height   : 1.2;
+}
+
+@media screen and (max-width: 400px) {
+
+  .action {
+    transform : scale(0.8);
+  }
+
+}
+
+@media screen and (max-width: 340px) {
+
+  .action {
+    margin-left : -25px;
+    transform   : scale(0.7);
+  }
+
+}

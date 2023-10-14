@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./web/assets/css/styles.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/trait.zoom.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/trait.lean.css">
+
+    <title>Origami Chameleon Labs</title>
+  </head>
+
+  <body>
+    <h1>Origami Chameleon Labs</h1>
+    <h2>Lab 3. Discarding Traits</h2>
+    <p>
+      In this Lab the same two Traits of the previous lab are designed. However,
+      in this case we use @Discard policies to manage name collision. As a result
+      the first installed effect prevail over the others being discarded. Use
+      buttons to install and uninstall extensions and click on the view.
+    </p>
+
+    <div class="container">
+      <div class="view">View A</div>
+    </div>
+
+    <div class="container">
+      <button id="ZBtn" class="button">TZoom</button>
+      <button id="LBtn" class="button">TLean</button>
+    </div>
+
+    <script type="module" src="./web/code/build/start.js"></script>
+  </body>
+
+</html>

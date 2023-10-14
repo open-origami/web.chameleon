@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./web/assets/css/styles.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/trait.zoom.css">
+    <link rel="stylesheet" href="./web/assets/css/extensions/trait.lean.css">
+
+    <title>Origami Chameleon Labs</title>
+  </head>
+
+  <body>
+    <h1>Origami Chameleon Labs</h1>
+    <h2>Lab 4. Composing Traits</h2>
+    <p>
+      The name collision problems show in the two previous labs can be solved
+      by applying a composition strategy. By applying @After policies, when we
+      install one extension over the previous one, the effects are applied one
+      after the other. Use buttons to install the extensions and click on the view.
+    </p>
+
+    <div class="container">
+      <div class="view">View A</div>
+    </div>
+
+    <div class="container">
+      <button id="ZBtn" class="button">TZoom</button>
+      <button id="LBtn" class="button">TLean</button>
+    </div>
+
+    <script type="module" src="./web/code/build/start.js"></script>
+  </body>
+
+</html>

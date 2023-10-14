@@ -1,0 +1,105 @@
+.toc {
+
+}
+
+.toc .title {
+  color       : #8BC34A;
+  font-size   : 36px;
+  font-weight : 800;
+  line-height : 1;
+  text-align  : center;
+}
+
+.toc p.lead {
+  margin      : 0;
+  font-size   : 24px;
+  font-weight : 300;
+  line-height : 1;
+  text-align  : center;
+}
+
+.toc p.intro {
+  margin     : 50px 0;
+  text-align : center;
+}
+
+.toc .cards {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  flex-wrap       : wrap;
+}
+
+.toc .card {
+  width         : 350px;
+  height        : 500px;
+  margin        : 15px;
+  padding       : 20px;
+  border        : 1px solid #CCC;
+  border-top    : 3px solid #8BC34A;
+  border-radius : 4px;
+}
+
+.toc .card .title {
+  font-size   : 24px;
+  color       : #555;
+  font-weight : 400;
+  text-align  : left;
+}
+
+.toc .card .description {
+  text-align : left;
+  font-size: 18px;
+
+}
+
+.toc .card .image img {
+  display : block;
+  margin  :  auto;
+  -filter  : grayscale(100%);
+}
+
+.toc .card .footer {
+  width       : 350px;
+  padding-top : 20px;
+  margin-left : -21px;
+  border-top  : 1px solid #CCC;
+}
+
+.toc .card .footer .link {
+  padding: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .toc .card {
+    width  : 550px;
+    height : 400px;
+  }
+
+  .toc .card .footer {
+    width : 550px;
+  }
+
+  .toc .card .description {
+    text-align : justify;
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  .toc .card {
+    width  : 350px;
+    height : 500px;
+  }
+
+  .toc .card .footer {
+    width : 350px;
+  }
+
+  .toc .card .description {
+    text-align : left;
+  }
+
+}

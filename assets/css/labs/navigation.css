@@ -1,0 +1,151 @@
+.navigation {
+  display        : flex;
+  flex-direction : row;
+  width          : 100%;
+  height         : 100px;
+  background     : #263238;
+}
+
+.navigation .brand .origami {
+  position : relative;
+  width    : 50px;
+  left     : -55px;
+  top      : -55px;
+}
+
+.navigation .logo {
+  position   : absolute;
+  top        : -100px;
+  right      : 400px;
+  transform  : scale(0.3);
+  z-index    : 100;
+  transition : filter 5s;
+}
+
+.navigation .logo:hover {
+  filter     : hue-rotate(180deg);
+  transition : filter 5s;
+}
+
+.navigation .brand {
+  width        : 320px;
+  min-width    : 320px;
+  padding-top  : 10px;
+  padding-left : 60px;
+}
+
+.navigation .brand .name {
+  color       : #CCC;
+  font-size   : 24px;
+  font-weight : 900;
+}
+
+.navigation .brand .tagline {
+  margin      : 5px 0;
+  color       : #606C76;
+  font-size   : 24px;
+  font-weight : 300;
+}
+
+.navigation .links {
+  width           : 100%;
+  margin          : 0 20px;
+  display         : flex;
+  align-items     : center;
+  justify-content : flex-end;
+  overflow        : hidden;
+}
+
+.navigation .link {
+  color           : #FFF;
+  font-size       : 18px;
+  text-decoration : none;
+}
+
+.navigation .link.active {
+  color : #8BC34A;
+}
+
+@media screen and (max-width: 1120px) {
+  .navigation .logo {
+    top       : 45px;
+    right     : 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  .navigation {
+    max-height     : 300px;
+    height         : 100%;
+    flex-direction : row-reverse;
+  }
+
+  .navigation .brand .origami {
+    position : relative;
+    width    : 45px;
+    left     : 65px;
+    top      : -55px;
+  }
+
+  .navigation .logo {
+    top       : 100px;
+    right     : -150px;
+  }
+
+  .navigation .brand {
+    padding-left  : 20px;
+    padding-right : 60px;
+    text-align    : right;
+  }
+
+  .navigation .links {
+    width           : 100%;
+    margin          : 30px 0 30px 40px;
+    display         : flex;
+    flex-wrap       : wrap;
+    flex-direction  : column;
+    align-items     : flex-start;
+  }
+
+  .navigation .link {
+    width      : 200px;
+    margin     : 15px 0;
+    text-align : left;
+  }
+
+}
+
+@media screen and (max-width: 545px) {
+
+  .navigation {
+    max-height     : 400px;
+    flex-direction : column;
+  }
+
+  .navigation .brand {
+    width        : 100%;
+    min-width    : 100%;
+    padding-top  : 10px;
+    padding-left : 60px;
+  }
+
+  .navigation .links {
+    margin : 10px 40px;
+  }
+
+  .navigation .link.active {
+    display : none;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+
+  .navigation .logo {
+    top       : 130px;
+    right     : -200px;
+    transform : scale(0.2);
+  }
+
+}
